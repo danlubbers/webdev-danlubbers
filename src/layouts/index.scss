@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$font-family: 'Roboto', sans-serif;
+$text-color: #999;
+$hover-color: #9D2E26;
+
+body {
+  background-color:rgb(40, 40, 40);
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: $hover-color;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.header-logo {
+  width: 40vw;
+}
+
+.bio-container {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.bio-image {
+  width: 20vw;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.codewars{
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.about-section{
+  padding: 0px 10px;
+  color: $text-color;
+  font-family: $font-family;
+  line-height: 25px;
+  letter-spacing: 2px; 
+  padding-bottom: 20px;
+  // background-color: yellow;
+}
+
+.full-stack-container {
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-family: $font-family;
+  color: $text-color;
+  border-top: 1px solid #666;
+  // background: blue;
+
+  @media (max-width: 600px) {
+    font-size: .9em;
+  }
+
+  @media (max-width: 486px) {
+    font-size: .7em;
+  }
+}
+
+// .skillset {
+//     display: flex;
+//     justify-content: center;
+//     font-family: $font-family;
+//     color: $text-color;
+// }
+
+.logo-container {
+  // background-color: yellow;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  text-align: center;
+  border-bottom: 1px solid #666;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 486px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.technology-text {
+  font-size: 1.4em;
+}
+
+.logos {
+  height: 50px;
+  margin: 5px 20px;
+  transition: all .2s ease-in-out;
+  // background-color: skyblue;
+}
+
+.logos:hover {
+  transform: scale(1.1);
+}
+
+.logo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family;
+  color: $text-color;
+  font-size: .8em;
+  // background-color: red;
+}
+
+.social-media-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: red;
+
+  @media(max-width: 768px){
+    // background-color: orange;
+    // padding-right: 50px;
+  }
+}
+
+.social-media-container-nested {
+  // background-color: pink;
+  margin: 0 auto;
+
+}
+.social-media {
+  width: 25vw;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  // background-color: blue;
+
+  @media(max-width: 768px){
+    width: 40vw;
+  }
+}
+
+.github svg{
+  width: 35px;
+  height: 35px;
+  color: $text-color;
+}
+
+.linkedin {
+  @extend .github
+}
+
+.instagram {
+  @extend .github
+}
+
+.camera {
+  @extend .github
+}
+
+.github svg:hover, .linkedin:hover, .instagram:hover, .camera:hover{
+  color: $hover-color;
+}
+
+// PROJECTS SECTION
+.projects-container {
+  margin: 0 auto;
+  width: 90vw;
+
+  .personal-project-text {
+    font-family: $font-family;
+    color: $text-color;
+    font-size: 1.4em;
+    text-align: center;
+    
+  }
+
+  .arc-clone-text {
+    font-family: $font-family;
+    color: $text-color;
+    font-size: 1.4em;  
+  }
+
+  .arc-tech {
+    font-family: $font-family;
+    color: $text-color;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 20px;
+
+    
+  }
+  section {
+    border-bottom: 1px solid #666;
+    @extend .arc-tech
+    
+  }
+
+  .screenshots{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .arc-desk{
+      width: 50vw;
+
+      @media(max-width: 768px){
+        width: 90vw;
+      }
+    }
+  
+    .arc-mobile {
+      width: 30vw;
+      @media(max-width: 768px){
+        margin-top: 20px;
+        width: 60vw;
+    }
+  }
+
+    @media(max-width: 768px){
+      flex-direction: column;
+    }
+  }
+
+  .group-project-text {
+    @extend .personal-project-text;
+    
+  }
+
+  .ruff-clone-text {
+    @extend .arc-clone-text;  
+  }
+
+  .ruff-tech {
+    @extend .arc-tech;
+  
+  }
+  section {
+  @extend .ruff-tech
+  
+  }
+
+  .ruff-desk{
+    width: 75vw;
+
+    @media(max-width: 768px){
+      width: 90vw;
+    }
+  }
+
+  .sunny-project-text {
+    @extend .personal-project-text;
+  }
+
+  .sunny-text {
+    @extend .arc-clone-text; 
+  }
+
+  .sunny-tech {
+    @extend .arc-tech;
+  }
+
+  .sunny-desk {
+    width: 75vw;
+
+    @media(max-width: 768px){
+      width: 90vw;
+    }
+  }
+
+  .hangman-text {
+    @extend .arc-clone-text;
+  }
+
+  .hangman-tech {
+    @extend .arc-tech;
+  }
+
+  .hangman-graphic {
+    margin-bottom: 20px;
+  }
+}
+
