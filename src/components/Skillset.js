@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+import React, {useEffect} from 'react'
 // AOS
-// import AOS from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 // Logos
 import gitLogo from '../../images/git-logo.png'
@@ -23,21 +23,16 @@ import PSLogo from '../../images/ps-logo.png'
 import XDLogo from '../../images/adobe-xd-logo.png'
 import heliconLogo from '../../images/helicon-logo.png'
 
-export default class Skillset extends Component {
-    constructor(props) {
-      super(props)
-    }
+const Skillset = () => {
 
-    componentDidMount() {
+    useEffect(() => {
       const isBrowser = typeof window !== 'undefined';
       const AOS = isBrowser ? require('aos') : undefined;
-      
-      this.aos = AOS;
-      this.aos.init({duration: 1000});
-  }
-
-    render() {
-        return(
+    
+      AOS.init({duration: 1000})
+    });
+    
+        return (
             <div className='skillset-content'>
             <div className='full-stack-container'>
               <h1 className='technology-text'>TECHNOLOGIES</h1>
@@ -124,5 +119,6 @@ export default class Skillset extends Component {
             </div>  
             </div>
         )
-    }
-}
+  }
+
+  export default Skillset;
