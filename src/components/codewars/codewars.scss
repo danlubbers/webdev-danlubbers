@@ -22,11 +22,17 @@
       flex-direction: row;
 
       .graphic-header {
-        position: relative;
+        // position: relative;
         margin-left: 10px;
         width: 53vw;
         max-width: 500px;
         min-width: 500px;
+
+        @media (max-width: 768px) {
+          // width: 300px;
+          max-width: 300px;
+          min-width: 300px;
+        }
       }
       
       .rank-name-wrapper {
@@ -36,11 +42,22 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        
+        @media (max-width: 768px) {
+          margin: 0 5px 0 15px;
+          
+        }
       }      
 
       h2 {
-        padding: 18px 0 0 15px;
+        padding: 21px 0 0 14px;
         font-size: 18px;
+        
+        @media (max-width: 768px) {
+          padding: 0 0 0 7px;
+          font-size: 9px;
+         
+        }
       }
 
       .username {
@@ -51,6 +68,13 @@
       .kyu {
         padding: 20px 10px 0 13px;
         color: #346490;
+        
+        @media (max-width: 768px) {
+          padding: 0px 10px 2px 14px;
+          
+         
+        }
+
       }
       .honor {
         margin-left: 175px;
@@ -60,11 +84,24 @@
         align-items: center;
         justify-content: flex-end;
         color: #999999;
+
+        @media (max-width: 768px) {
+          margin-left: 100px;
+         
+        }
       }
       .codewars-logo {
         margin: 20px 0 0 10px;
         padding: 0;
         width: 40px;
+        
+        @media (max-width: 768px) {
+          margin: 0 0 0 5px;
+          padding: 0;
+          width: 20px;
+         
+         
+        }
       }
     }
   }

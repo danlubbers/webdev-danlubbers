@@ -36,9 +36,9 @@ const Projects = () => {
                     <h3>Instructions:</h3>
                         <ul>
                             <li>Words are chosen at random.</li>
-                            <li>Only the letters A - Z will be accelited.</li>
+                            <li>Only the letters A - Z will be accepted.</li>
                             <li>The user will get 6 incorrect guesses before that round is over.</li>
-                            <li>A dulilicate incorrect guess will not count against the user.</li>
+                            <li>A duplicate incorrect guess will not count against the user.</li>
                             <li>Each round will start automatically after the first round is finished.</li>
                             <li>The user can quit at any time by typing CTRL-C.</li>
                         </ul>

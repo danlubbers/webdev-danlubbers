@@ -5,7 +5,7 @@ $text-color: #999;
 $hover-color: #9D2E26;
 
 body {
-  background-color:rgb(40, 40, 40);
+  background-color:rgb(25, 25, 25);
 }
 
 a {
@@ -306,6 +306,11 @@ a:hover {
 
   .hangman-graphic {
     margin-bottom: 20px;
+    max-width: 500px;
+
+    @media(max-width: 768px){
+      width: 70vw;
+    }
   }
 }
 
