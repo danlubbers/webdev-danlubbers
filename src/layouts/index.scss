@@ -4,18 +4,36 @@ $font-family: 'Roboto', sans-serif;
 $text-color: #999;
 $hover-color: #9D2E26;
 
-body {
+html {
+  margin: auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;  
   background-color:rgb(25, 25, 25);
 }
 
+.app-wrapper {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
 a {
+  margin: auto 0;
+  padding: 0;
   color: $text-color;
   text-decoration: none;
-  
 }
 
 a:hover {
   color: $hover-color;
+}
+
+.project-screenshot {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .header {
@@ -29,31 +47,32 @@ a:hover {
 }
 
 .header-logo {
-  width: 40vw;
+  width: 40%;
 }
 
 .bio-container {
   margin: 0 auto;
-  width: 90vw;
+  // padding: 10px 0 10px 0;
+  width: 90%;
 }
 
 .bio-image {
-  width: 20vw;
+  padding: 20px 0;
+  width: 20%;
   border-radius: 50%;
   margin: 0 auto;
   display: block;
 }
 
-.codewars{
+.codewars {
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   
 }
 
 .about-section{
-  padding: 0px 10px;
   color: $text-color;
   font-family: $font-family;
   line-height: 25px;
@@ -64,7 +83,7 @@ a:hover {
 
 .full-stack-container {
   margin: 0 auto;
-  width: 90vw;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,7 +114,7 @@ a:hover {
   // background-color: yellow;
   margin: 0 auto;
   padding-bottom: 20px;
-  width: 90vw;
+  width: 95%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
@@ -155,7 +174,7 @@ a:hover {
 
 }
 .social-media {
-  width: 25vw;
+  width: 25%;
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -163,11 +182,12 @@ a:hover {
   // background-color: blue;
 
   @media(max-width: 768px){
-    width: 40vw;
+    width: 40%;
   }
 }
 
 .github svg{
+  padding: 0 10px;;
   width: 35px;
   height: 35px;
   color: $text-color;
@@ -192,9 +212,10 @@ a:hover {
 // PROJECTS SECTION
 .projects-container {
   margin: 0 auto;
-  width: 90vw;
+  width: 95%;
 
-  .personal-project-text {
+  .project-text {
+    padding-top: 20px;
     font-family: $font-family;
     color: $text-color;
     font-size: 1.4em;
@@ -202,13 +223,13 @@ a:hover {
     
   }
 
-  .arc-clone-text {
+  .text {
     font-family: $font-family;
     color: $text-color;
     font-size: 1.4em;  
   }
 
-  .arc-tech {
+  .tech {
     font-family: $font-family;
     color: $text-color;
     font-size: 1em;
@@ -217,9 +238,11 @@ a:hover {
 
     
   }
+  
   section {
+    padding-bottom: 20px; 
     border-bottom: 1px solid #666;
-    @extend .arc-tech
+    @extend .tech
     
   }
 
@@ -229,19 +252,19 @@ a:hover {
     justify-content: space-around;
     align-items: center;
 
-    .arc-desk{
-      width: 50vw;
+    .arc-desk {
+      width: 85%;
 
       @media(max-width: 768px){
-        width: 90vw;
+        width: 90%;
       }
     }
   
     .arc-mobile {
-      width: 30vw;
+      width: 100%;
       @media(max-width: 768px){
         margin-top: 20px;
-        width: 60vw;
+        width: 100%;
     }
   }
 
@@ -250,58 +273,20 @@ a:hover {
     }
   }
 
-  .group-project-text {
-    @extend .personal-project-text;
-    
-  }
-
-  .ruff-clone-text {
-    @extend .arc-clone-text;  
-  }
-
-  .ruff-tech {
-    @extend .arc-tech;
-  
-  }
-  section {
-  @extend .ruff-tech
-  
-  }
-
   .ruff-desk{
-    width: 75vw;
+    width: 75%;
 
     @media(max-width: 768px){
-      width: 90vw;
+      width: 90%;
     }
-  }
-
-  .sunny-project-text {
-    @extend .personal-project-text;
-  }
-
-  .sunny-text {
-    @extend .arc-clone-text; 
-  }
-
-  .sunny-tech {
-    @extend .arc-tech;
   }
 
   .sunny-desk {
-    width: 75vw;
+    width: 75%;
 
     @media(max-width: 768px){
-      width: 90vw;
+      width: 90%;
     }
-  }
-
-  .hangman-text {
-    @extend .arc-clone-text;
-  }
-
-  .hangman-tech {
-    @extend .arc-tech;
   }
 
   .hangman-graphic {
@@ -309,7 +294,7 @@ a:hover {
     max-width: 500px;
 
     @media(max-width: 768px){
-      width: 70vw;
+      width: 70%;
     }
   }
 }

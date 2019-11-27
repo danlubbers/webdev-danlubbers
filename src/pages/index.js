@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import '../layouts/index.scss';
 
 const IndexPage = () => (
-    <div>
+    <div className='app-wrapper'>
         <div>
           <Header />
             <Bio /> 

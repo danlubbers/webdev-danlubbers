@@ -9,9 +9,9 @@ import Hangman from '../../images/hangman.png'
 const Projects = () => {
         return(
             <div className='projects-container'>
-                 <h1 className='sunny-project-text'>CLIENT PORTFOLIO SITE</h1>
-                    <h2 className='sunny-text'>ARTIST SUNNY RA</h2>
-                    <p className='sunny-tech'>Tech used: 
+                 <h1 className='sunny-project-text project-text'>CLIENT PORTFOLIO SITE</h1>
+                    <h2 className='sunny-text text'>ARTIST SUNNY RA</h2>
+                    <p className='sunny-tech tech'>Tech used: 
   React | HTML | Sass | Javascript | Redux | React Helmet | PostgresSQL | Digital Ocean | Google Analytics
                 </p>
                 <section>
@@ -22,13 +22,13 @@ const Projects = () => {
                     </p>
                     <a href='https://github.com/danlubbers/sunny-ra.com' target='_blank' rel="noopener noreferrer">GITHUB REPO</a>
                     <div className='screenshots'>
-                   <a href='http://www.sunny-ra.com' target='_blank' rel="noopener noreferrer"><img className='sunny-desk' src={SunnyRa} alt='sunny ra portfolio site shown on different devices'/></a>
+                   <a className='project-screenshot' href='http://www.sunny-ra.com' target='_blank' rel="noopener noreferrer"><img className='sunny-desk' src={SunnyRa} alt='sunny ra portfolio site shown on different devices'/></a>
                     </div>
                 </section>
 
-                <h1 className='personal-project-text'>AlbanyCanCode: PERSONAL PROJECT</h1>
-                <h2 className='hangman-text'>HANGMAN</h2>
-                <p className='hangman-tech'>TECH USED: Javascript | Node | Readline-Sync
+                <h1 className='personal-project-text project-text'>AlbanyCanCode: PERSONAL PROJECT</h1>
+                <h2 className='hangman-text text'>HANGMAN</h2>
+                <p className='hangman-tech tech'>TECH USED: Javascript | Node | Readline-Sync
                 </p>
                 <section>
                     <h3>DETAILS OF PROJECT :</h3>
@@ -47,14 +47,14 @@ const Projects = () => {
                         <a className='hangman-project-requirements' href='https://github.com/AlbanyCanCodeCourses/JavaScriptFundamentals2019/blob/master/docs/Project1Description.md' target='_blank' rel="noopener noreferrer">Click for Project Requirements</a>
                     </p>
                     <div className='screenshots'>
-                    <a href='https://github.com/danlubbers/hangman' target='_blank' rel="noopener noreferrer"><img className='hangman-graphic' src={Hangman} alt='hangman'/></a>
+                    <a  className='project-screenshot' href='https://github.com/danlubbers/hangman' target='_blank' rel="noopener noreferrer"><img className='hangman-graphic' src={Hangman} alt='hangman'/></a>
 
                     </div>
                 </section>
 
-                <h1 className='personal-project-text'>DevMtn: PERSONAL PROJECT</h1>
-                <h2 className='arc-clone-text'>ARC'TERYX LEAF CLONE </h2>
-                <p className='arc-tech'>TECH USED: React | Sass | Javascript 
+                <h1 className='personal-project-text project-text'>DevMtn: PERSONAL PROJECT</h1>
+                <h2 className='arc-clone-text text'>ARC'TERYX LEAF CLONE </h2>
+                <p className='arc-tech tech'>TECH USED: React | Sass | Javascript 
                     | Redux | Node | PostgresSQL | Hover | Digital Ocean
                 </p>
                 <section>
@@ -64,14 +64,14 @@ const Projects = () => {
                     </p>
                     <a href='https://github.com/danlubbers/arcteryx-clone' target='_blank' rel="noopener noreferrer">GITHUB REPO</a>
                     <div className='screenshots'>
-                   <a href='http://arcteryxclone.danlubbers.com' target='_blank' rel="noopener noreferrer"><img  className='arc-desk' src={ArcDesk} alt='arcteryx clone desktop screenshot'/></a>
-                   <a href='http://arcteryxclone.danlubbers.com' target='_blank' rel="noopener noreferrer"><img  className='arc-mobile' src={ArcMobile} alt='arcteryx clone mobile screenshot'/></a>
+                   <a  className='project-screenshot' href='http://arcteryxclone.danlubbers.com' target='_blank' rel="noopener noreferrer"><img  className='arc-desk' src={ArcDesk} alt='arcteryx clone desktop screenshot'/></a>
+                   <a  className='project-screenshot' href='http://arcteryxclone.danlubbers.com' target='_blank' rel="noopener noreferrer"><img  className='arc-mobile' src={ArcMobile} alt='arcteryx clone mobile screenshot'/></a>
                     </div>
                 </section>
 
-                  <h1 className='group-project-text'>DevMtn: GROUP PROJECT</h1>
-                <h2 className='ruff-clone-text'>RUFFWEAR CLONE </h2>
-                <p className='ruff-tech'>TECH USED: React | Sass | Javascript 
+                  <h1 className='group-project-text project-text'>DevMtn: GROUP PROJECT</h1>
+                <h2 className='ruff-clone-text text'>RUFFWEAR CLONE </h2>
+                <p className='ruff-tech tech'>TECH USED: React | Sass | Javascript 
                     | Redux | Node | PostgresSQL | Hover | Digital Ocean
                 </p>
                 <section>
@@ -81,7 +81,7 @@ const Projects = () => {
                     </p>
                     <a href='https://github.com/danlubbers/ruffwear-clone' target='_blank' rel="noopener noreferrer">GITHUB REPO</a>
                     <div className='screenshots'>
-                   <a href='http://ruffdoggies.danlubbers.com' target='_blank' rel="noopener noreferrer"><img className='ruff-desk' src={RuffDesk} alt='ruffwear clone desktop screenshot'/></a>
+                   <a  className='project-screenshot' href='http://ruffdoggies.danlubbers.com' target='_blank' rel="noopener noreferrer"><img className='ruff-desk' src={RuffDesk} alt='ruffwear clone desktop screenshot'/></a>
                     </div>
                 </section>
             </div>
