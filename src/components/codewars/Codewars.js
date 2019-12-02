@@ -11,18 +11,17 @@ const App = () => {
     const [error, setError] = useState('');
     const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
-    // Using Axios with try/catch blocks
     useEffect(() => {
       async function getData() {
         try {
           const res = await axios.get(proxyurl + API)
             setCodewarsData(res.data)  
-        } catch (error) {
-            setError(error);
+        } catch (err) {
+            setError(err);
           }
       }
         getData();
-      }, [API]);
+      }, [API, error]);
 
       return (
       <div className="App">
@@ -32,7 +31,6 @@ const App = () => {
               <span>
               <img className='graphic-header' src={graphicHeader} alt='header'/>
                 <div className='rank-name-wrapper'>
-                  {/* Using the short circuit method we check if codewars.ranks is true, then when it is, it will display the nested information I'm wanting to retrieve */}
                   <h2 className='kyu'>{codewarsData.ranks && codewarsData.ranks.overall.name}</h2> 
                   <h2 className='username'>{codewarsData.username}</h2>
                   <h2 className='honor'>{codewarsData.honor}</h2> <img className='codewars-logo' src={codewarsLogo} alt="codewars-logo"/>

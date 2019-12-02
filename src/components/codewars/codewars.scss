@@ -6,11 +6,8 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  // font-size: calc(10px + 2vmin);
   color: rgb(215, 215, 215);
   font-family: 'Roboto';
-  // background-color: red;
-
 
   .text-wrapper {
     display: flex;
@@ -23,14 +20,12 @@
       flex-direction: row;
 
       .graphic-header {
-        // position: relative;
         margin-left: 10px;
         width: 53vw;
         max-width: 500px;
         min-width: 500px;
 
         @media (max-width: 667px) {
-          // width: 300px;
           max-width: 300px;
           min-width: 300px;
         }
