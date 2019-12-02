@@ -246,7 +246,7 @@ a:hover {
     align-items: center;
 
     .arc-desk {
-      width: 90vw;
+      width: 90%;
 
       @media(max-width: 768px){
         height: 100%;
@@ -254,11 +254,11 @@ a:hover {
     }
   
     .arc-mobile {
-      width: 100vw;
+      width: 100%;
       @media(max-width: 768px){
         margin-top: 20px;
-        width: 50vw;
-        height: 50vh;
+        width: 50%;
+        height: 50%;
     }
   }
 
@@ -268,7 +268,7 @@ a:hover {
   }
 
   .ruff-desk{
-    width: 90vw;
+    width: 90%;
 
     @media(max-width: 768px){
       height: 100%;
@@ -276,7 +276,7 @@ a:hover {
   }
 
   .sunny-desk {
-    width: 100vw;
+    width: 100%;
 
     @media(max-width: 768px){
       height: 100%;

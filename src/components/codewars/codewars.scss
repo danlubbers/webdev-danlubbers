@@ -21,6 +21,7 @@
 
       .graphic-header {
         margin-left: 10px;
+        height: 57px;
         width: 53vw;
         max-width: 500px;
         min-width: 500px;
@@ -63,7 +64,7 @@
       }
 
       .kyu {
-        padding: 20px 10px 0 13px;
+        padding: 20px 8px 0 12px;
         color: #346490;
         
         @media (max-width: 667px) {
