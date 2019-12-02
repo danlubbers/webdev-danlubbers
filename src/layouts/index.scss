@@ -48,6 +48,10 @@ a:hover {
 
 .header-logo {
   width: 40%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 }
 
 .bio-container {
@@ -61,6 +65,10 @@ a:hover {
   border-radius: 50%;
   margin: 0 auto;
   display: block;
+
+  @media (max-width: 768px) {
+    width: 40%;
+  }
 }
 
 .codewars {
@@ -238,18 +246,19 @@ a:hover {
     align-items: center;
 
     .arc-desk {
-      width: 85%;
+      width: 90vw;
 
       @media(max-width: 768px){
-        width: 90%;
+        height: 100%;
       }
     }
   
     .arc-mobile {
-      width: 100%;
+      width: 100vw;
       @media(max-width: 768px){
         margin-top: 20px;
-        width: 100%;
+        width: 50vw;
+        height: 50vh;
     }
   }
 
@@ -259,18 +268,18 @@ a:hover {
   }
 
   .ruff-desk{
-    width: 75%;
+    width: 90vw;
 
     @media(max-width: 768px){
-      width: 90%;
+      height: 100%;
     }
   }
 
   .sunny-desk {
-    width: 75%;
+    width: 100vw;
 
     @media(max-width: 768px){
-      width: 90%;
+      height: 100%;
     }
   }
 
@@ -279,7 +288,8 @@ a:hover {
     max-width: 500px;
 
     @media(max-width: 768px){
-      width: 70%;
+      height: 100%;
+      width: 100%;
     }
   }
 }

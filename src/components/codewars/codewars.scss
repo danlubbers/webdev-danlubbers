@@ -26,6 +26,7 @@
         min-width: 500px;
 
         @media (max-width: 667px) {
+          height: 35px;
           max-width: 300px;
           min-width: 300px;
         }
@@ -66,7 +67,7 @@
         color: #346490;
         
         @media (max-width: 667px) {
-          padding: 0px 10px 2px 14px;
+          padding: 1px 10px 2px 12px;
           
          
         }
