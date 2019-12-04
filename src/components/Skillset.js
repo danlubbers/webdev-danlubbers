@@ -22,6 +22,9 @@ import LRLogo from '../../images/lr-logo.png'
 import PSLogo from '../../images/ps-logo.png'
 import XDLogo from '../../images/adobe-xd-logo.png'
 import heliconLogo from '../../images/helicon-logo.png'
+import digitalOceanLogo from '../../images/digital-ocean.png'
+import nginxLogo from '../../images/nginx-logo.png'
+import netlifyLogo from '../../images/netlify-logo.png'
 
 const Skillset = () => {
 
@@ -79,6 +82,18 @@ const Skillset = () => {
               <div data-aos='fade-up' data-aos-anchor-placement="center-center" data-aos-delay='300'>
                 <img className='logos' src={nodeLogo} alt='node logo'/>
                 <h2 className='logo-text'>NODE</h2>
+              </div>
+              <div data-aos='fade-up' data-aos-anchor-placement="center-center" data-aos-delay='300'>
+                <img className='logos' src={nginxLogo} alt='nginx logo'/>
+                <h2 className='logo-text'>NGINX</h2>
+              </div>
+              <div data-aos='fade-up' data-aos-anchor-placement="center-center" data-aos-delay='300'>
+                <img className='logos' src={digitalOceanLogo} alt='digital ocean logo'/>
+                <h2 className='logo-text'>DIGITAL OCEAN</h2>
+              </div>
+              <div data-aos='fade-up' data-aos-anchor-placement="center-center" data-aos-delay='300'>
+                <img className='logos' src={netlifyLogo} alt='netlify logo'/>
+                <h2 className='logo-text'>NETLIFY</h2>
               </div>
               <div data-aos='fade-up' data-aos-anchor-placement="center-center" data-aos-delay='400'>
                 <img className='logos' src={postgresLogo} alt='postgres logo'/>
