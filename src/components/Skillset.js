@@ -10,6 +10,8 @@ import html5Logo from "../../images/html5-logo.png"
 import css3Logo from "../../images/css3-logo.png"
 import sassLogo from "../../images/sass-logo.svg"
 import JSLogo from "../../images/js-logo.png"
+import typescriptLogo from "../../images/ts-logo-256.png"
+import materialUILogo from "../../images/material-ui-logo.svg"
 import reduxLogo from "../../images/redux-logo.png"
 import gatsbyLogo from "../../images/gatsby-logo.png"
 import nodeLogo from "../../images/node-logo.png"
@@ -25,7 +27,6 @@ import heliconLogo from "../../images/helicon-logo.png"
 import digitalOceanLogo from "../../images/digital-ocean.png"
 import nginxLogo from "../../images/nginx-logo.png"
 import netlifyLogo from "../../images/netlify-logo.png"
-import typescriptLogo from "../../images/ts-logo-256.png"
 
 const Skillset = () => {
   useEffect(() => {
@@ -103,8 +104,16 @@ const Skillset = () => {
           data-aos-anchor-placement="center-center"
           data-aos-delay="100"
         >
-          <img className="logos" src={typescriptLogo} alt="JS logo" />
+          <img className="logos" src={typescriptLogo} alt="TS logo" />
           <h2 className="logo-text">TYPESCRIPT</h2>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+          data-aos-delay="100"
+        >
+          <img className="logos" src={materialUILogo} alt="Material UI logo" />
+          <h2 className="logo-text">Material UI</h2>
         </div>
         <div
           data-aos="fade-up"
