@@ -60,10 +60,9 @@ export default class Bio extends Component {
           </a>{" "}
           and has been refining his Javascript skills even further. In May 2020,
           Dan started as a Front-End React Software Engineer on a small team
-          helping to build an end-to-end app for a Healthcare Company called
-          Psi. A love of good coffee usually leads one to find him at local
-          coffee shops working diligently on his work either at home or when
-          traveling.{" "}
+          building an end-to-end app for a Healthcare Company called Psī. A love
+          of good coffee usually leads one to find him at local coffee shops
+          working diligently on his work either at home or when traveling.{" "}
         </p>
         <p className="about-section quote">
           "Life is too short not to create something with every breath we draw."
